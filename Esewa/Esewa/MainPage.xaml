@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Esewa.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:source="clr-namespace:Esewa"
+    NavigationPage.HasNavigationBar="False"
+    mc:Ignorable="d">
+
+    <StackLayout>
+        <StackLayout>
+            <StackLayout
+                BackgroundColor="#41a124"
+                HeightRequest="60"
+                VerticalOptions="StartAndExpand">
+                <StackLayout
+                    Margin="20,0,0,0"
+                    Orientation="Horizontal"
+                    VerticalOptions="CenterAndExpand">
+                    <Label
+                        FontSize="18"
+                        Text="Esewa"
+                        TextColor="White"
+                        VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+
+            </StackLayout>
+            <StackLayout
+                x:Name="body"
+                Margin="0,0,0,0"
+                BackgroundColor="#00000080"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+                <source:HybridWebView
+                    x:Name="webViewForm"
+                    Margin="0,-6,0,0"
+                    HeightRequest="1000" />
+            </StackLayout>
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>
