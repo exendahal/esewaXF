@@ -1,5 +1,8 @@
-# esewaXF
+# esewa Xamarin
 esewa payment integration on Xamarin Forms using WebView
+
+# Native AAR Binding for esewa
+Link: https://github.com/exendahal/esewaSDK
 
 Use javascript function below to pass data from javascript to C#. This can be used to perform navigation after payment success/failure operation.
 
